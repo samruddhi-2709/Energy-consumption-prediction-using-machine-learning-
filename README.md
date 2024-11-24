@@ -1,17 +1,9 @@
 # Energy-consumption-prediction-using-machine-learning-
 
-This project focuses on Energy Consumption Prediction for an electrical blower machine. The dataset used features time-series data recorded at 10-15 minute intervals using IoT devices. 
+This project focuses on predicting energy consumption for an electrical blower machine using time-series data collected at 10-15 minute intervals via IoT devices. It leverages advanced analytical techniques to forecast energy usage, facilitating improved energy management and operational efficiency in industrial settings.
 
-Key characteristics of the dataset include:
+The dataset features energy measurement in kilowatt-hours (KWh) computed between consecutive timestamps. Energy values below 0.5 KWh indicate that the machine was non-operational during those time slots. The data represents stationary time-series characteristics, making it ideal for forecasting tasks.
 
-Energy Measurement: Energy consumption is calculated between current and previous timestamps in kilowatt-hours (KWh).
-Operational State: Energy values below 0.5 KWh indicate that the machine was off during the respective time slot.
-Stationary Series: The dataset represents stationary time-series data for forecasting.
+Key features of this project include time-series decomposition (using both additive and multiplicative methods) to extract seasonal, trend, and residual components, and the implementation of autoregression (AR) models to forecast future energy consumption patterns.
 
-Key Features of the Notebook:
-
-Time-Series Decomposition: Both additive and multiplicative decompositions are applied to analyze the components of the time series.
-AutoRegression Models: Implements AR-based forecasting methods to predict future energy consumption trends.
-
-Applications:
-This project demonstrates predictive analytics for industrial IoT data, enabling better energy management and operational efficiency.
+This project demonstrates the application of predictive analytics for industrial IoT data, supporting better decision-making for energy management and optimizing operational efficiency.
